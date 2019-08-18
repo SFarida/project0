@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/style.scss">
+        <title>Farida</title>
+    </head>
+    <body>
+        <!--Header-->
+        <header>
+                <nav>
+                    <ul class="nav justify-content-end">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About me</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact Me</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="books.html">Books read</a>
+                        </li>
+                        <!--
+                        <li class="nav-item">
+                            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="false">Books read</a>
+                        </li>
+                        -->
+                    </ul>
+                </nav>
+            </header>
+            <!--End header-->
+            <main>
+                <div id="welcome-message" class="backColor">
+                    <p>
+                        Alright, now it’s time to make your website your own. Design a personal webpage about yourself, 
+                        one of your interests, or any other topic of your choice. The subject matter, look and feel, and 
+                        design of the site are entirely up to you, subject to the following requirements:
+                        <ol>
+                            <li>What do you want to share?</li>
+                            <li>In what way do you wnat to share, in other words, how will you like to pass your message</li>
+                            <li>Who is your audience? This is not all but its worth noting down.</li>
+                        </ol>
+                    </p>
+                </div>
+                <div id="container" class="backColor">
+                    <div id="div-content0">
+                        <div style="max-width:20%;">
+                            <img class="mySlides" src="img/img0.png" style="width:100%">
+                            <img class="mySlides" src="img/img1.png" style="width:100%">
+                            <img class="mySlides" src="img/img2.png" style="width:100%">
+                          </div>
+                    </div><br>
+                    <p>
+                            Some of the books I read:
+                            <table>
+                                <tr>
+                                    <th>Book Title</th>
+                                    <th>Author</th>
+                                    <th>Genre</th>
+                                </tr>
+                                <tr>
+                                    <td>La Corruptrice</td>
+                                    <td>Guy des Cars</td>
+                                    <td>Roman</td>
+                                </tr>
+                                <tr>
+                                    <td>Une saison blanche et sèche</td>
+                                    <td>André Brink</td>
+                                    <td>Roman</td>
+                                </tr>
+                                <tr>
+                                    <td>Sous la cendre le feu</td>
+                                    <td>Evelyne Mpoudi Ngollé</td>
+                                    <td>Roman,Fiction</td>
+                                </tr>
+                                <tr>
+                                    <td>La Maitresse Du Ministre</td>
+                                    <td>Zazi</td>
+                                    <td>Roman</td>
+                                </tr>
+                            </table>
+                        </p>
+                </div>
+                <footer>
+
+                </footer>
+            </main>
+            <script>
+                var myIndex = 0;
+                carousel();
+                
+                function carousel() {
+                  var i;
+                  var x = document.getElementsByClassName("mySlides");
+                  for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";  
+                  }
+                  myIndex++;
+                  if (myIndex > x.length) {myIndex = 1}    
+                  x[myIndex-1].style.display = "block";  
+                  setTimeout(carousel, 2000); // Change image every 2 seconds
+                }
+                </script>
+    </body>
+</html>
